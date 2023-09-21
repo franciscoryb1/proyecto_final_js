@@ -1,10 +1,10 @@
 // PRODUCTOS
 const productos = [
-    // Abrigos
+    // Hoodies
     {
         id: "abrigo-01",
-        titulo: "Abrigo 01",
-        imagen: "./img/abrigos/01.jpg",
+        titulo: "Hoodie Oversize Amarillo",
+        imagen: "./img/hoodies/01.png",
         categoria: {
             nombre: "Abrigos",
             id: "abrigos"
@@ -13,8 +13,8 @@ const productos = [
     },
     {
         id: "abrigo-02",
-        titulo: "Abrigo 02",
-        imagen: "./img/abrigos/02.jpg",
+        titulo: "Hoodie Oversize Azul",
+        imagen: "./img/hoodies/02.png",
         categoria: {
             nombre: "Abrigos",
             id: "abrigos"
@@ -23,8 +23,8 @@ const productos = [
     },
     {
         id: "abrigo-03",
-        titulo: "Abrigo 03",
-        imagen: "./img/abrigos/03.jpg",
+        titulo: "Hoodie Oversize Gris",
+        imagen: "./img/hoodies/03.png",
         categoria: {
             nombre: "Abrigos",
             id: "abrigos"
@@ -33,8 +33,8 @@ const productos = [
     },
     {
         id: "abrigo-04",
-        titulo: "Abrigo 04",
-        imagen: "./img/abrigos/04.jpg",
+        titulo: "Hoodie Oversize Negro",
+        imagen: "./img/hoodies/04.png",
         categoria: {
             nombre: "Abrigos",
             id: "abrigos"
@@ -43,19 +43,49 @@ const productos = [
     },
     {
         id: "abrigo-05",
-        titulo: "Abrigo 05",
-        imagen: "./img/abrigos/05.jpg",
+        titulo: "Buzo KOTK Beige",
+        imagen: "./img/hoodies/05.png",
         categoria: {
             nombre: "Abrigos",
             id: "abrigos"
         },
         precio: 1000
     },
-    // Camisetas
+    {
+        id: "abrigo-06",
+        titulo: "Buzo KOTK Gris",
+        imagen: "./img/hoodies/06.png",
+        categoria: {
+            nombre: "Abrigos",
+            id: "abrigos"
+        },
+        precio: 1000
+    },
+    {
+        id: "abrigo-07",
+        titulo: "Buzo KOTK Marron",
+        imagen: "./img/hoodies/07.png",
+        categoria: {
+            nombre: "Abrigos",
+            id: "abrigos"
+        },
+        precio: 1000
+    },
+    {
+        id: "abrigo-08",
+        titulo: "Buzo KOTK Negro",
+        imagen: "./img/hoodies/08.png",
+        categoria: {
+            nombre: "Abrigos",
+            id: "abrigos"
+        },
+        precio: 1000
+    },
+    // Remeras
     {
         id: "camiseta-01",
-        titulo: "Camiseta 01",
-        imagen: "./img/camisetas/01.jpg",
+        titulo: "Chomba blanca oversize",
+        imagen: "./img/remeras/01.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -64,8 +94,8 @@ const productos = [
     },
     {
         id: "camiseta-02",
-        titulo: "Camiseta 02",
-        imagen: "./img/camisetas/02.jpg",
+        titulo: "Remera mangas largas blanca",
+        imagen: "./img/remeras/02.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -74,8 +104,8 @@ const productos = [
     },
     {
         id: "camiseta-03",
-        titulo: "Camiseta 03",
-        imagen: "./img/camisetas/03.jpg",
+        titulo: "Remera mangas largas negra",
+        imagen: "./img/remeras/03.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -84,8 +114,8 @@ const productos = [
     },
     {
         id: "camiseta-04",
-        titulo: "Camiseta 04",
-        imagen: "./img/camisetas/04.jpg",
+        titulo: "Remera oversize football",
+        imagen: "./img/remeras/04.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -94,8 +124,8 @@ const productos = [
     },
     {
         id: "camiseta-05",
-        titulo: "Camiseta 05",
-        imagen: "./img/camisetas/05.jpg",
+        titulo: "Remera oversize negra",
+        imagen: "./img/remeras/05.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -104,8 +134,8 @@ const productos = [
     },
     {
         id: "camiseta-06",
-        titulo: "Camiseta 06",
-        imagen: "./img/camisetas/06.jpg",
+        titulo: "Remera Snoopdoog",
+        imagen: "./img/remeras/06.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -114,8 +144,8 @@ const productos = [
     },
     {
         id: "camiseta-07",
-        titulo: "Camiseta 07",
-        imagen: "./img/camisetas/07.jpg",
+        titulo: "Remera oversize blanca",
+        imagen: "./img/remeras/07.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -124,8 +154,8 @@ const productos = [
     },
     {
         id: "camiseta-08",
-        titulo: "Camiseta 08",
-        imagen: "./img/camisetas/08.jpg",
+        titulo: "Remera Brand White",
+        imagen: "./img/remeras/08.png",
         categoria: {
             nombre: "Camisetas",
             id: "camisetas"
@@ -135,8 +165,8 @@ const productos = [
     // Pantalones
     {
         id: "pantalon-01",
-        titulo: "Pantalón 01",
-        imagen: "./img/pantalones/01.jpg",
+        titulo: "Jogging Blanco",
+        imagen: "./img/pantalones/01.png",
         categoria: {
             nombre: "Pantalones",
             id: "pantalones"
@@ -145,8 +175,8 @@ const productos = [
     },
     {
         id: "pantalon-02",
-        titulo: "Pantalón 02",
-        imagen: "./img/pantalones/02.jpg",
+        titulo: "Jogging Blanco",
+        imagen: "./img/pantalones/02.png",
         categoria: {
             nombre: "Pantalones",
             id: "pantalones"
@@ -155,8 +185,8 @@ const productos = [
     },
     {
         id: "pantalon-03",
-        titulo: "Pantalón 03",
-        imagen: "./img/pantalones/03.jpg",
+        titulo: "Jogging Blanco",
+        imagen: "./img/pantalones/03.png",
         categoria: {
             nombre: "Pantalones",
             id: "pantalones"
@@ -165,8 +195,8 @@ const productos = [
     },
     {
         id: "pantalon-04",
-        titulo: "Pantalón 04",
-        imagen: "./img/pantalones/04.jpg",
+        titulo: "Pantalon Nasketball Negro",
+        imagen: "./img/pantalones/04.png",
         categoria: {
             nombre: "Pantalones",
             id: "pantalones"
@@ -175,8 +205,38 @@ const productos = [
     },
     {
         id: "pantalon-05",
-        titulo: "Pantalón 05",
-        imagen: "./img/pantalones/05.jpg",
+        titulo: "Pantalon Cargo Beige",
+        imagen: "./img/pantalones/05.png",
+        categoria: {
+            nombre: "Pantalones",
+            id: "pantalones"
+        },
+        precio: 1000
+    },
+    {
+        id: "pantalon-06",
+        titulo: "Pantalon Cargo Negro",
+        imagen: "./img/pantalones/06.png",
+        categoria: {
+            nombre: "Pantalones",
+            id: "pantalones"
+        },
+        precio: 1000
+    },
+    {
+        id: "pantalon-07",
+        titulo: "Pantalon Racing Team Negro",
+        imagen: "./img/pantalones/07.png",
+        categoria: {
+            nombre: "Pantalones",
+            id: "pantalones"
+        },
+        precio: 1000
+    },
+    {
+        id: "pantalon-08",
+        titulo: "Pantalon Racing Team Blue",
+        imagen: "./img/pantalones/08.png",
         categoria: {
             nombre: "Pantalones",
             id: "pantalones"
