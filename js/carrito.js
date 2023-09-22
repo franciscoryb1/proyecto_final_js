@@ -72,6 +72,24 @@ function actualizarBotonesEliminar() {
 };
 
 function eliminarDelCarrito(e) {
+    Toastify({
+        text: "Producto eliminado",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "#222831",
+          textTransform: "uppercase",
+          fontSize: ".75rem"
+        },
+        offset: {
+            x: '2rem',
+            y: '2rem'
+          },
+        onClick: function(){}
+      }).showToast();
+
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     
@@ -82,30 +100,31 @@ function eliminarDelCarrito(e) {
 };
 
 botonVaciar.addEventListener("click", vaciarCarrito);
-// function vaciarCarrito() {
-
-//     Swal.fire({
-//         title: '¿Estás seguro?',
-//         icon: 'question',
-//         html: `Se van a borrar ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
-//         showCancelButton: true,
-//         focusConfirm: false,
-//         confirmButtonText: 'Sí',
-//         cancelButtonText: 'No'
-//     }).then((result) => {
-//         if (result.isConfirmed) {
-//             productosEnCarrito.length = 0;
-//             localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-//             cargarProductosCarrito();
-//         }
-//       })
-// };
-
 function vaciarCarrito() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    cargarProductosCarrito();
+
+    Swal.fire({
+        title: '¿Estás seguro?',
+        icon: 'question',
+        html: `Se van a borrar ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'Sí',
+        confirmButtonColor: "#222831",
+        cancelButtonText: 'No'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+            cargarProductosCarrito();
+        }
+      })
 };
+
+// function vaciarCarrito() {
+//     productosEnCarrito.length = 0;
+//     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+//     cargarProductosCarrito();
+// };
 
 function actualizarTotal() {
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
